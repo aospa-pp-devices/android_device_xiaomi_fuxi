@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/fuxi
 # Inherit from sm8550-common
 include device/xiaomi/sm8550-common/BoardConfigCommon.mk
 
+# Kernel
+include $(DEVICE_PATH)/kernel/kernel-platform.mk
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 
