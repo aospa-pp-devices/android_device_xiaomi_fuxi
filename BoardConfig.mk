@@ -16,15 +16,6 @@ TARGET_SCREEN_DENSITY := 420
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest_fuxi.xml
 
-# Kernel Modules
-device_second_stage_modules := \
-    xiaomi_touch.ko \
-    fts_touch_spi.ko
-
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(addprefix $(KERNEL_PREBUILT_DIR)/vendor_dlkm/, $(device_second_stage_modules))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
-
 # OTA
 TARGET_OTA_ASSERT_DEVICE := fuxi
 
