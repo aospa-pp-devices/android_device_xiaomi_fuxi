@@ -12,6 +12,10 @@ include device/xiaomi/sm8550-common/BoardConfigCommon.mk
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# HIDL
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest_fuxi.xml
+
 # Kernel Modules
 device_second_stage_modules := \
     xiaomi_touch.ko \

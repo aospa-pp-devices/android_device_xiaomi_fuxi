@@ -1,17 +1,10 @@
-# Unpinned blobs from fuxi_global-user 13 TKQ1.221114.001 V816.0.4.0.UMCMIXM release-keys
+# Unpinned blobs from fuxi_global-user 13 TKQ1.221114.001 OS3.0.303.0.WMCMIXM release-keys
 
 # ACDB
 odm/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb
 odm/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp
 
 # ADSP (Modules)
-odm/etc/audio/misound_karaoke_res.bin
-odm/etc/audio/misound_karaokemix_res.bin
-odm/etc/audio/misound_res_headphone.bin
-odm/etc/audio/misound_res_spk.bin
-odm/etc/audio/misound_res_spk4ch.bin
-odm/etc/audio/misound_res_spk_power_game.bin
-odm/etc/audio/misound_res_spk_power_video.bin
 odm/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so
 odm/lib/rfsa/adsp/libmialgo_ell_cdsp_skel.so
 odm/lib/rfsa/adsp/libmialgo_night_align_cdsp_skel.so
@@ -70,7 +63,7 @@ odm/mount/camera/lib/rfsa/adsp/bm3a73v08s11n63.bin:vendor/lib/rfsa/adsp/bm3a73v0
 odm/mount/camera/lib/rfsa/adsp/libCalculator_skel.so:vendor/lib/rfsa/adsp/libCalculator_skel.so
 odm/mount/camera/lib/rfsa/adsp/libQnnHtpV73.so:vendor/lib/rfsa/adsp/libQnnHtpV73.so
 odm/mount/camera/lib/rfsa/adsp/libQnnHtpV73Skel.so:vendor/lib/rfsa/adsp/libQnnHtpV73Skel.so
-odm/mount/camera/lib/rfsa/adsp/libQnnSaver.so:vendor/lib/rfsa/adsp/libQnnSaver.so
+odm/mount/camera/lib/rfsa/adsp/libQnnSaver.so:vendor/lib/rfsa/adsp/libQnnSaver.so;MODULE_SUFFIX=_adsp
 odm/mount/camera/lib/rfsa/adsp/libSnpeDspV65Skel.so:vendor/lib/rfsa/adsp/libSnpeDspV65Skel.so
 odm/mount/camera/lib/rfsa/adsp/libSnpeDspV66Skel.so:vendor/lib/rfsa/adsp/libSnpeDspV66Skel.so
 odm/mount/camera/lib/rfsa/adsp/libSnpeHtpV68Skel.so:vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
@@ -94,6 +87,7 @@ odm/mount/camera/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so:vendor/lib/rfsa/adsp/l
 odm/mount/camera/lib/rfsa/adsp/libmialgo_slow_motion_cdsp_skel.so:vendor/lib/rfsa/adsp/libmialgo_slow_motion_cdsp_skel.so
 vendor/lib/rfsa/adsp/capi_cirrus_sp.so
 vendor/lib/rfsa/adsp/chre_qsh_shim.so
+vendor/lib/rfsa/adsp/hrtf5c.bin
 vendor/lib/rfsa/adsp/libDspIOProxy_skel.so
 vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
@@ -121,6 +115,18 @@ vendor/lib/rfsa/adsp/libvpp_vqa_networks.so
 vendor/lib/rfsa/adsp/libvpt_action_recognition.so
 vendor/lib/rfsa/adsp/nearby.napp_header;MODULE=nearby.napp_header
 vendor/lib/rfsa/adsp/nearby.so
+
+# Audio (Calibration)
+odm/etc/audio/hrtf5c.bin
+odm/etc/audio/misound_karaoke_res.bin
+odm/etc/audio/misound_karaokemix_res.bin
+odm/etc/audio/misound_res_headphone.bin
+odm/etc/audio/misound_res_spk.bin
+odm/etc/audio/misound_res_spk4ch.bin
+odm/etc/audio/misound_res_spk_power_game.bin
+odm/etc/audio/misound_res_spk_power_video.bin
+odm/etc/audio/silent-3sec.wav
+vendor/etc/hrtf5c.bin
 
 # Audio (Configs)
 odm/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml
@@ -207,12 +213,7 @@ odm/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/eff
 odm/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/eye_pupil.bin
 odm/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/left_eye.bin
 odm/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/right_eye.bin
-odm/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FaceMask.bin
-odm/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FacialSmoothMask_first.bin
-odm/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FacialSmoothMask_second.bin
-odm/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/effectV2.json
 odm/etc/camera/resources/render/Effect/30_BasicRetouch/mode_base.json
-odm/etc/camera/resources/render/Effect/30_BasicRetouch/mode_base_all.json
 odm/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/effect_capture.json
 odm/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/effect_preview.json
 odm/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/xr.bin
@@ -315,7 +316,6 @@ odm/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_
 odm/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_NEED_REFINE.bin
 odm/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT.bin
 odm/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT_NEED_REFINE.bin
-odm/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin
 odm/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET_Define_NEED_REFINE.bin
 odm/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin
 odm/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin
@@ -397,7 +397,6 @@ odm/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_
 odm/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_NEED_REFINE.bin
 odm/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT.bin
 odm/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT_NEED_REFINE.bin
-odm/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin
 odm/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET_Define_NEED_REFINE.bin
 odm/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin
 odm/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin
@@ -465,6 +464,34 @@ odm/etc/camera/resources/render/GlobalConfig.json
 odm/etc/camera/resources/default_param.json
 odm/etc/camera/resources/truesight_param.json
 odm/etc/camera/resources/truesight_param_debug.json
+odm/etc/camera/videofilter/110_BlackGold.png
+odm/etc/camera/videofilter/129_LeicaVivid.png
+odm/etc/camera/videofilter/130_LeicaNatural.png
+odm/etc/camera/videofilter/131_MonochromeTrue.png
+odm/etc/camera/videofilter/132_MonochromeHighContrast.png
+odm/etc/camera/videofilter/133_MonochromeBrown.png
+odm/etc/camera/videofilter/134_MonochromeBlue.png
+odm/etc/camera/videofilter/144_RedHero.png
+odm/etc/camera/videofilter/146_TactileGreen.png
+odm/etc/camera/videofilter/148_Mild.png
+odm/etc/camera/videofilter/149_LilyWhite.png
+odm/etc/camera/videofilter/150_Bright.png
+odm/etc/camera/videofilter/151_Fresh.png
+odm/etc/camera/videofilter/152_Limpid.png
+odm/etc/camera/videofilter/153_KC64.png
+odm/etc/camera/videofilter/154_V250.png
+odm/etc/camera/videofilter/155_H400.png
+odm/etc/camera/videofilter/156_ColdWhite.png
+odm/etc/camera/videofilter/157_Native.png
+odm/etc/camera/videofilter/158_BWClassical.png
+odm/etc/camera/videofilter/159_Flowers.png
+odm/etc/camera/videofilter/160_Vivid.png
+odm/etc/camera/videofilter/161_KP160.png
+odm/etc/camera/videofilter/162_Natural.png
+odm/etc/camera/videofilter/163_KG200.png
+odm/etc/camera/videofilter/164_FC400.png
+odm/etc/camera/videofilter/165_C50D.png
+odm/etc/camera/videofilter/166_F50.png
 odm/etc/camera/xiaomi/EcoCloudInfo.json
 odm/etc/camera/xiaomi/dualbokehjpegsnapshot.json
 odm/etc/camera/xiaomi/dualbokehsnapshot.json
@@ -494,32 +521,6 @@ odm/etc/camera/xiaomi/thirdpartyrawsupernightjpeg_ext.json
 odm/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json
 odm/etc/camera/xiaomi/thirdpartyrawsupernightyuv_ext.json
 odm/etc/camera/xiaomi/thirdpartysnapshot.json
-odm/etc/camera/102_SummerDay.png
-odm/etc/camera/103_Fantasy.png
-odm/etc/camera/104_Meet.png
-odm/etc/camera/105_WindSing.png
-odm/etc/camera/106_Lost.png
-odm/etc/camera/107_Central.png
-odm/etc/camera/108_NorthernEurope.png
-odm/etc/camera/109_Rome.png
-odm/etc/camera/110_BlackGold.png
-odm/etc/camera/111_GreenOrange.png
-odm/etc/camera/112_CyberPunk.png
-odm/etc/camera/113_BlackIce.png
-odm/etc/camera/121_Bleach.png
-odm/etc/camera/122_Thriller.png
-odm/etc/camera/123_TealOrange.png
-odm/etc/camera/124_JapaneseStyle.png
-odm/etc/camera/125_Latin.png
-odm/etc/camera/126_Fantasy2.png
-odm/etc/camera/127_Creamy.png
-odm/etc/camera/128_Sepia.png
-odm/etc/camera/129_Vivid.png
-odm/etc/camera/130_Natural.png
-odm/etc/camera/131_Monochrome.png
-odm/etc/camera/132_MonochromeHighContrast.png
-odm/etc/camera/133_MonochromeBrown.png
-odm/etc/camera/134_MonochromeBlue.png
 odm/etc/camera/CFR_para_UW_V01.bin
 odm/etc/camera/GpuKernelRepo.pb
 odm/etc/camera/MILDC_CALIB_0x01.bin
@@ -549,7 +550,8 @@ odm/etc/camera/beauty_config_cn.json
 odm/etc/camera/beauty_config_gl.json
 odm/etc/camera/beauty_style_nude.cng
 odm/etc/camera/bokehParams.json
-odm/etc/camera/camerabooster.json
+odm/etc/camera/cameradfx_config.json
+odm/etc/camera/cameraopt_reclaim.json
 odm/etc/camera/camxoverridesettings.txt
 odm/etc/camera/com.xiaomi.dcal.wt.data
 odm/etc/camera/com.xiaomi.dcal.wt.golden
@@ -826,12 +828,14 @@ odm/lib64/com.qualcomm.mcx.nonlinearmapper.so
 odm/lib64/com.qualcomm.mcx.policy.mfl.so
 odm/lib64/com.qualcomm.mcx.policy.xr.so
 odm/lib64/com.qualcomm.qti.mcx.usecase.extension.so
+odm/lib64/com.xiaomi.camdfx.so
 odm/lib64/com.xiaomi.camhal.overlap.so
 odm/lib64/com.xiaomi.camhal.submodel.camxfrag.so
 odm/lib64/com.xiaomi.camhal.submodel.chifrag.so
 odm/lib64/libAF.so
 odm/lib64/libHISCppAlgos.so
 odm/lib64/libMiMotion.so
+odm/lib64/libMiPhotoFilter.so;DISABLE_CHECKELF
 odm/lib64/libTrueSight.so;DISABLE_CHECKELF
 odm/lib64/libXMFaceFocus.so
 odm/lib64/libaidenoiser.so
@@ -878,6 +882,7 @@ odm/lib64/libcom.xiaomi.mawutils.so
 odm/lib64/libcom.xiaomi.mawutilsold.so
 odm/lib64/libcom.xiaomi.metadatautils.so
 odm/lib64/libcom.xiaomi.pluginutils.so
+odm/lib64/libcom.xiaomi.providercallback.so
 odm/lib64/libcommonchiutils.so
 odm/lib64/libdeflicker.so
 odm/lib64/libdeflickerNM.so
@@ -966,7 +971,6 @@ odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libubifocus.so
 odm/lib64/libvideoBokeh.so
-odm/lib64/libvideofilter_only.so
 odm/lib64/libvideoml.so
 odm/lib64/libvidhance.so
 odm/lib64/libvidhance_active_ois.so
@@ -1047,6 +1051,10 @@ odm/etc/df_default.xml
 # Fingerprint
 odm/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 odm/lib64/libgf_hal.so
+
+# Media
+odm/etc/media_profiles_kalama.xml:vendor/etc/media_profiles_kalama.xml
+odm/etc/media_profiles_kalama.xml
 
 # Media (Dolby Vision)
 odm/etc/dolby/dax-default.xml
