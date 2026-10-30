@@ -51,6 +51,16 @@ blob_fixups: blob_fixups_user_type = {
             'com.instagram.android', 
             ''
         ),
+    # The MIUI camera uses vendor op mode 0x9005 (StreamConfigModeAlgoNormal,
+    # MialgoOpMode 0x8005 StreamConfigModeMiuiZslFront) for the front camera,
+    # but the blob declares that entry with LensFacing 0. mihal filters the
+    # mode list by lens facing, so it finds no entry and buildConfigToDarkroom
+    # ends up with an empty stream list, crashing the provider.
+    'odm/etc/camera/xiaomi/mivivendorstreamconfig.json': blob_fixup()
+        .regex_replace(
+            r'("VendorOpMode": 36869,[\s\S]*?"LensFacing": )[01]',
+            r'\g<1>1',
+        ),
     (
         'odm/lib64/libailab_rawhdr.so',
         'odm/lib64/libxmi_high_dynamic_range_cdsp.so',
